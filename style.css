@@ -69,13 +69,15 @@ body {
   min-width: 80%;
 }
 
-form {
+#form-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
   background-color: lightblue;
   padding: 25px;
   border-radius: 15px;
+  height: 500px;
+  width: 400px;
 }
 .top-container {
   padding: 25px;
