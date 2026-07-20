@@ -17,8 +17,9 @@ const myLibrary = [
 ];
 
 function displayBooks() {
-  myLibrary.forEach((book) => {
-    console.log(book.title);
-  });
+  myLibrary.forEach((book) => {});
 }
 displayBooks();
+
+let addBookBtn = document.querySelector(".add-book-btn");
+addBookBtn.addEventListener("click", () => {});
