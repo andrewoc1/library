@@ -1,0 +1,96 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and paddings so browsers don't guess */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Allow percentage-based heights and smooth typography text-rendering */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remove built-in form typography inheritances */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 50%;
+  width: 50%;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: lightgrey;
+  border-radius: 15px 15px 0 0;
+}
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  background-color: teal;
+  padding: 25px;
+  border-radius: 0 0 15px 15px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+}
+
+button {
+  background-color: tan;
+  padding: 5px;
+  border-radius: 10px;
+}
